@@ -26,7 +26,7 @@ for x in dict:
 
 
 aux = sorted(dictAux.items(), key=operator.itemgetter(1), reverse=True)
-
+print(aux);
 resultado = {}
 print 'RESULTADO'
 for x in range(0, 5):
