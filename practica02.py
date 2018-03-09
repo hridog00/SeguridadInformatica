@@ -1,10 +1,13 @@
 import operator
+
+#EJERCICIO 1
 p = {'a':0.3,'b': 0.2, 'c':0.1, 'd':0.1, 'e':0.05, 'f':0.05, 'g':0.05, 'h':0.05, 'i':0.05, 'j':0.05}
 c={'a':'','b': '', 'c':'', 'd':'', 'e':'', 'f':'', 'g':'', 'h':'', 'i':'', 'j':''}
 
 #p={'a': 0.3, 'b': 0.2, 'c': 0.2, 'd': 0.1, 'e': 0.1, 'f':0.1}
 #c={'a': '', 'b': '', 'c': '', 'd': '', 'e': '', 'f':''}
 
+#EJERCICIO 2
 f=[27,16,4,56,22,2,78,45,36,13,12,7]
 
 total = 0.0
@@ -21,7 +24,7 @@ for elem in f:
     c[letras[variable]] = ''
     variable = variable +1
 
-
+#EJERCICIO 3
 texto = "La noche cae, brumosa ya y morada. Vagas claridades malvas y verdes perduran tras la torre de la iglesia. El camino sube, lleno de sombras, de campanillas, de fragancia de hierba, de canciones, de cansancio y de anhelo."
 #texto = 'secreto de uno secreto seguro'
 print 'primer valor ',texto[0]
@@ -46,6 +49,7 @@ for x in dict:
     print x ,':',dict[x] ,':',p[x]
 
 
+#COMUN
 inicial = p.copy();
 print 'FRECUENCIAS INICIALES'
 print p
