@@ -18,7 +18,7 @@ f = [83, 69, 67, 82, 69, 84, 79, 32, 68, 69, 32, 85, 78, 79, 32, 83, 69, 67, 82,
 total = 0.0
 
 
-f=[5, 1]
+
 f= duplicar(f)
 for elem in f:
     total = total + elem
@@ -28,6 +28,9 @@ print total
 letras = 'abcdefghijklmnopqrstuvwxyzABC'
 simbolo = ''
 x = 0
+
+#asociar probabilidades a simbolos
+
 for elem in f:
     if x < 10:
         simbolo = 'a00' + str(x)
