@@ -25,7 +25,7 @@ for elem in f:
     variable = variable +1
 
 #EJERCICIO 3
-texto = "La noche cae, brumosa ya y morada. Vagas claridades malvas y verdes perduran tras la torre de la iglesia. El camino sube, lleno de sombras, de campanillas, de fragancia de hierba, de canciones, de cansancio y de anhelo."
+texto = "Me viene ahora el recuerdo de las noches en la calle de Aribau. Aquellas noches que corrian como un rio negro, bajo los puentes de los dias, y en las que los olores estancados despedian un vaho de fantasmas."
 #texto = 'secreto de uno secreto seguro'
 print 'primer valor ',texto[0]
 dict = {texto[0] : 0.0}

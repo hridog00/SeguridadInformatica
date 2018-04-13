@@ -11,6 +11,13 @@ def duplicar(f):
 
 
     return res
+def duplicar3():
+    res = []
+    for i in f:
+        for x in f:
+            for j in f:
+                res.append(i*x*j)
+
 
 
 #ejercicio 1
