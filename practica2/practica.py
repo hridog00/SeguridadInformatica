@@ -13,10 +13,6 @@ def generarPalabrasQarias(q, k, res, re):
 
     else:
         res.append(re)
-
-
-
-
     return
 
 def getMatrizGeneradora(A):
