@@ -80,10 +80,8 @@ A=[[1,1,0,1,1,1,0,0,0,1,0,1],
 [1,1,1,1,1,1,1,1,1,1,1,0]]
 q = 2
 matrizG = getMatrizGeneradora(A)
-print matrizG
 generarPalabrasQarias(q,len(A), res, re)
-print res
-print len(res)
-buscarPesos(matrizG, res, q)
+
+distanciaMin = buscarPesos(matrizG, res, q)
 
 
