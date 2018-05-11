@@ -75,7 +75,7 @@ def transpuesta(matriz):
 
     return [[matriz[j][i] for j in xrange(rows)] for i in xrange(cols)]
 
-def matrizControl(matriz):
+def matrizControl(matriz,q):
     A = transpuesta(matriz)
     id = []
     for i in range(0, len(A)):
@@ -91,7 +91,7 @@ def matrizControl(matriz):
     for i in range(0, len(A)):
         aux = []
         for j in range(0, len(A[i])):
-            aux.append(A[i][j])
+            aux.append(-(A[i][j])%q)
         for j in range(0, len(id[i])):
             aux.append(id[i][j])
 
@@ -169,20 +169,20 @@ def trasponerY(y):
             yT[j][i] = y[i][j]
     return yT
 
-def getSindromes(H, y):
+def getSindromes(H, y,q):
 
     yT = trasponerY(y)
 
 
     sindromes = np.dot(H, yT)
-    sindromes = sindromes%2
+    sindromes = sindromes%q
 
 
     s = trasponerY(sindromes)
 
     return s
 
-def getMensaje(y,e):
+def getMensaje(y,e,q):
     res = []
     print len(y), ' ', len(e)
     for i in range (0, len(y)):
@@ -190,7 +190,7 @@ def getMensaje(y,e):
        list = map(operator.sub, y[i], e[i])
        print 'l', list
        for j in range(0,4):
-           res.append(list[j]%2)
+           res.append(list[j]%q)
     return res
 
 def getmensajeFuente(C):
@@ -217,7 +217,7 @@ q=2
 G = getMatrizGeneradora(A)
 print 'Generadora'
 print G
-H=  matrizControl(A)
+H=  matrizControl(A,q)
 print 'Matriz de control'
 print H
 #
@@ -284,7 +284,7 @@ cola = []
 if len(y[len(y)-1])<7:
     cola.append(y.pop())
 
-sindromes = getSindromes(H, y)
+sindromes = getSindromes(H, y,q)
 
 erroresY = encontrarErroresTablero(sindromes,tablero,errores)
 print 'Y'
@@ -293,7 +293,7 @@ print 'SINDROMES'
 print sindromes
 print 'ERRORES PATRON'
 print erroresY
-dec = getMensaje(y,erroresY)
+dec = getMensaje(y,erroresY,q)
 for i in cola:
     for j in i:
 
