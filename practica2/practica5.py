@@ -90,6 +90,7 @@ A=[0,1,0,1,1,0,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
 1,1,0,1,1,0,0,1]
 
 B= getMensajeLineal(A)
+print 'B'
 print B
 C = dividir(B,6)
 print getmensajeFuente(C)
