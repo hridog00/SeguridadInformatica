@@ -5,7 +5,7 @@ import sys
 print sys.stdout.encoding
 
 def obtenerMensaje(m, c):
-    alf = 'aábcdeéfghiíjklmnñoópqrstuúvwxyzAÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚVWXYZ0123456789 ,.:-()'
+    alf = "aábcdeéfghiíjklmnñoópqrstuúvwxyzAÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚVWXYZ0123456789 ,.:-()"
     Z = len(alf)
     mNum = []
     cNum = []
